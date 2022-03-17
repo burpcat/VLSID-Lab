@@ -1,0 +1,14 @@
+1. open dsch and draw the diagram
+2. save the file for required name
+3. Screenshot the diagram
+4. Screnshot the timing diagram also
+5. From file, click on "Schema to new symbol"
+6. Also click on "Make verilog file"
+
+7. Now open Microwind tool from D:/ "
+8. Click on Compile > Compile Verilog file
+9. In the sub window which is created, select compile
+10. After error check passes, click on back to editor
+11. Now take a screenshot of the layout file which is present in the window.
+12. Now select Compile > MOS Characteristics
+13. Now take a screenshot of all the available waveforms

@@ -1,0 +1,23 @@
+USER SYMBOL by DSCH3
+DATE 03/09/22 4:06:12 PM
+SYM  #not_gate
+BB(0,0,40,20)
+TITLE 10 -7  #not_gate
+MODEL 6000
+REC(5,5,30,10)
+PIN(0,10,0.00,0.00)in1
+PIN(40,10,2.00,1.00)out1
+LIG(0,10,5,10)
+LIG(35,10,40,10)
+LIG(5,5,5,15)
+LIG(5,5,35,5)
+LIG(35,5,35,15)
+LIG(35,15,5,15)
+VLG module not_gate( in1,out1);
+VLG  input in1;
+VLG  output out1;
+VLG  wire ;
+VLG  pmos #(17) pmos_1(out1,vdd,in1); // 2.0u 0.12u
+VLG  nmos #(17) nmos_2(out1,vss,in1); // 1.0u 0.12u
+VLG endmodule
+FSYM
