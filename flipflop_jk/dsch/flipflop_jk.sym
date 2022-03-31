@@ -1,0 +1,58 @@
+USER SYMBOL by DSCH3
+DATE 31-Mar-22 11:13:45 AM
+SYM  #flipflop_jk
+BB(0,0,40,40)
+TITLE 10 -7  #flipflop_jk
+MODEL 6000
+REC(5,5,30,30)
+PIN(0,10,0.00,0.00)S
+PIN(0,30,0.00,0.00)clk1
+PIN(0,20,0.00,0.00)R
+PIN(40,20,2.00,1.00)Q
+PIN(40,10,2.00,1.00)Qinv
+LIG(0,10,5,10)
+LIG(0,30,5,30)
+LIG(0,20,5,20)
+LIG(35,20,40,20)
+LIG(35,10,40,10)
+LIG(5,5,5,35)
+LIG(5,5,35,5)
+LIG(35,5,35,35)
+LIG(35,35,5,35)
+VLG module flipflop_jk( S,clk1,R,Q,Qinv);
+VLG  input S,clk1,R;
+VLG  output Q,Qinv;
+VLG  wire w3,w4,w6,w10,w11,w12,w13,w14;
+VLG  wire w15,w16;
+VLG  nand #(41) nand_gate_1(w4,clk1,w3);
+VLG  nand #(62) nand_gate_2(Q,w6,Qinv);
+VLG  nand #(62) nand_gate_3(Qinv,Q,w4);
+VLG  nand #(41) nand_gate_4(w6,w10,clk1);
+VLG  nand #(41) nand_gate_5(w10,Qinv,R);
+VLG  nand #(41) nand_gate_6(w3,S,Q);
+VLG  nmos #(12) nmos_1_7(w11,vss,clk1); //  
+VLG  pmos #(40) pmos_2_8(w4,vdd,w3); //  
+VLG  pmos #(40) pmos_3_9(w4,vdd,clk1); //  
+VLG  nmos #(40) nmos_4_10(w4,w11,w3); //  
+VLG  nmos #(12) nmos_1_11(w12,vss,w6); //  
+VLG  pmos #(61) pmos_2_12(Q,vdd,Qinv); //  
+VLG  pmos #(61) pmos_3_13(Q,vdd,w6); //  
+VLG  nmos #(61) nmos_4_14(Q,w12,Qinv); //  
+VLG  nmos #(12) nmos_1_15(w13,vss,Q); //  
+VLG  pmos #(61) pmos_2_16(Qinv,vdd,w4); //  
+VLG  pmos #(61) pmos_3_17(Qinv,vdd,Q); //  
+VLG  nmos #(61) nmos_4_18(Qinv,w13,w4); //  
+VLG  nmos #(12) nmos_1_19(w14,vss,w10); //  
+VLG  pmos #(40) pmos_2_20(w6,vdd,clk1); //  
+VLG  pmos #(40) pmos_3_21(w6,vdd,w10); //  
+VLG  nmos #(40) nmos_4_22(w6,w14,clk1); //  
+VLG  nmos #(12) nmos_1_23(w15,vss,Qinv); //  
+VLG  pmos #(40) pmos_2_24(w10,vdd,R); //  
+VLG  pmos #(40) pmos_3_25(w10,vdd,Qinv); //  
+VLG  nmos #(40) nmos_4_26(w10,w15,R); //  
+VLG  nmos #(12) nmos_1_27(w16,vss,S); //  
+VLG  pmos #(40) pmos_2_28(w3,vdd,Q); //  
+VLG  pmos #(40) pmos_3_29(w3,vdd,S); //  
+VLG  nmos #(40) nmos_4_30(w3,w16,Q); //  
+VLG endmodule
+FSYM
