@@ -1,0 +1,35 @@
+USER SYMBOL by DSCH3
+DATE 31-Mar-22 10:31:13 AM
+SYM  #latch_sr
+BB(0,0,40,30)
+TITLE 10 -7  #latch_sr
+MODEL 6000
+REC(5,5,30,20)
+PIN(0,10,0.00,0.00)S
+PIN(0,20,0.00,0.00)R
+PIN(40,10,2.00,1.00)Qinv
+PIN(40,20,2.00,1.00)Q
+LIG(0,10,5,10)
+LIG(0,20,5,20)
+LIG(35,10,40,10)
+LIG(35,20,40,20)
+LIG(5,5,5,25)
+LIG(5,5,35,5)
+LIG(35,5,35,25)
+LIG(35,25,5,25)
+VLG module latch_sr( S,R,Qinv,Q);
+VLG  input S,R;
+VLG  output Qinv,Q;
+VLG  wire w6,w7;
+VLG  nor #(48) nor_gate_1(Q,R,Qinv);
+VLG  nor #(48) nor_gate_2(Qinv,Q,S);
+VLG  nmos #(47) nmos_1_3(Q,vss,Qinv); //  
+VLG  pmos #(12) pmos_2_4(w6,vdd,Qinv); //  
+VLG  pmos #(47) pmos_3_5(Q,w6,R); //  
+VLG  nmos #(47) nmos_4_6(Q,vss,R); //  
+VLG  nmos #(47) nmos_1_7(Qinv,vss,S); //  
+VLG  pmos #(12) pmos_2_8(w7,vdd,S); //  
+VLG  pmos #(47) pmos_3_9(Qinv,w7,Q); //  
+VLG  nmos #(47) nmos_4_10(Qinv,vss,Q); //  
+VLG endmodule
+FSYM
