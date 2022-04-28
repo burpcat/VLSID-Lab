@@ -1,5 +1,5 @@
 // DSCH3
-// 31-Mar-22 11:44:04 AM
+// 26-Apr-22 1:49:23 PM
 // D:\19211a0417\flipflop_d\dsch\flipflop_d.sch
 
 module flipflop_d( clk1,D,Q,Qinv);

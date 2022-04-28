@@ -1,11 +1,11 @@
 DSCH3
-VERSION 31-Mar-22 11:13:20 AM
+VERSION 26-Apr-22 1:53:49 PM
 BB(-15,-60,184,120)
 SYM  #nand_gate
 BB(20,45,60,75)
 TITLE 30 38  #nand_gate
 MODEL 6000
-PROP                                                                                                                                   
+PROP                                                                                                                                    
 REC(25,50,30,20,r)
 VIS 5
 PIN(20,55,0.000,0.000)in2
@@ -18,21 +18,21 @@ LIG(25,50,25,70)
 LIG(25,50,55,50)
 LIG(55,50,55,70)
 LIG(55,70,25,70)
-VLG  module nand_gate( in2,in1,out1);
-VLG   input in2,in1;
-VLG   output out1;
-VLG   wire w3,;
-VLG   nmos #(10) nmos_1(w3,vss,in2); // 1.0u 0.12u
-VLG   pmos #(24) pmos_2(out1,vdd,in1); // 2.0u 0.12u
-VLG   pmos #(24) pmos_3(out1,vdd,in2); // 2.0u 0.12u
-VLG   nmos #(24) nmos_4(out1,w3,in1); // 1.0u 0.12u
-VLG  endmodule
+VLG    module nand_gate( in2,in1,out1);
+VLG     input in2,in1;
+VLG     output out1;
+VLG     wire w3,;
+VLG     nmos #(10) nmos_1(w3,vss,in2); // 1.0u 0.12u
+VLG     pmos #(24) pmos_2(out1,vdd,in1); // 2.0u 0.12u
+VLG     pmos #(24) pmos_3(out1,vdd,in2); // 2.0u 0.12u
+VLG     nmos #(24) nmos_4(out1,w3,in1); // 1.0u 0.12u
+VLG    endmodule
 FSYM
 SYM  #button
 BB(-14,61,-5,69)
 TITLE -10 65  #S
 MODEL 59
-PROP                                                                                                                                   
+PROP                                                                                                                                    
 REC(-13,62,6,6,r)
 VIS 1
 PIN(-5,65,0.000,0.000)S
@@ -50,7 +50,7 @@ SYM  #clock
 BB(-15,32,0,38)
 TITLE -10 35  #clock1
 MODEL 69
-PROP   10.00 10.00                                                                                                                               
+PROP   10.00 10.00                                                                                                                                
 REC(-13,33,6,4,r)
 VIS 1
 PIN(0,35,1.500,0.280)clk1
@@ -71,7 +71,7 @@ SYM  #nand_gate
 BB(105,-5,145,25)
 TITLE 115 -12  #nand_gate
 MODEL 6000
-PROP                                                                                                                                   
+PROP                                                                                                                                    
 REC(110,0,30,20,r)
 VIS 5
 PIN(105,5,0.000,0.000)in2
@@ -84,21 +84,21 @@ LIG(110,0,110,20)
 LIG(110,0,140,0)
 LIG(140,0,140,20)
 LIG(140,20,110,20)
-VLG  module nand_gate( in2,in1,out1);
-VLG   input in2,in1;
-VLG   output out1;
-VLG   wire w3,;
-VLG   nmos #(10) nmos_1(w3,vss,in2); // 1.0u 0.12u
-VLG   pmos #(24) pmos_2(out1,vdd,in1); // 2.0u 0.12u
-VLG   pmos #(24) pmos_3(out1,vdd,in2); // 2.0u 0.12u
-VLG   nmos #(24) nmos_4(out1,w3,in1); // 1.0u 0.12u
-VLG  endmodule
+VLG    module nand_gate( in2,in1,out1);
+VLG     input in2,in1;
+VLG     output out1;
+VLG     wire w3,;
+VLG     nmos #(10) nmos_1(w3,vss,in2); // 1.0u 0.12u
+VLG     pmos #(24) pmos_2(out1,vdd,in1); // 2.0u 0.12u
+VLG     pmos #(24) pmos_3(out1,vdd,in2); // 2.0u 0.12u
+VLG     nmos #(24) nmos_4(out1,w3,in1); // 1.0u 0.12u
+VLG    endmodule
 FSYM
 SYM  #nand_gate
 BB(105,45,145,75)
 TITLE 115 38  #nand_gate
 MODEL 6000
-PROP                                                                                                                                   
+PROP                                                                                                                                    
 REC(110,50,30,20,r)
 VIS 5
 PIN(105,55,0.000,0.000)in2
@@ -111,21 +111,21 @@ LIG(110,50,110,70)
 LIG(110,50,140,50)
 LIG(140,50,140,70)
 LIG(140,70,110,70)
-VLG  module nand_gate( in2,in1,out1);
-VLG   input in2,in1;
-VLG   output out1;
-VLG   wire w3,;
-VLG   nmos #(10) nmos_1(w3,vss,in2); // 1.0u 0.12u
-VLG   pmos #(24) pmos_2(out1,vdd,in1); // 2.0u 0.12u
-VLG   pmos #(24) pmos_3(out1,vdd,in2); // 2.0u 0.12u
-VLG   nmos #(24) nmos_4(out1,w3,in1); // 1.0u 0.12u
-VLG  endmodule
+VLG    module nand_gate( in2,in1,out1);
+VLG     input in2,in1;
+VLG     output out1;
+VLG     wire w3,;
+VLG     nmos #(10) nmos_1(w3,vss,in2); // 1.0u 0.12u
+VLG     pmos #(24) pmos_2(out1,vdd,in1); // 2.0u 0.12u
+VLG     pmos #(24) pmos_3(out1,vdd,in2); // 2.0u 0.12u
+VLG     nmos #(24) nmos_4(out1,w3,in1); // 1.0u 0.12u
+VLG    endmodule
 FSYM
 SYM  #light
 BB(178,-10,184,4)
 TITLE 180 4  #Q
 MODEL 49
-PROP                                                                                                                                   
+PROP                                                                                                                                    
 REC(179,-9,4,4,r)
 VIS 1
 PIN(180,5,0.000,0.000)Q
@@ -148,7 +148,7 @@ SYM  #light
 BB(178,40,184,54)
 TITLE 180 54  #Q~
 MODEL 49
-PROP                                                                                                                                   
+PROP                                                                                                                                    
 REC(179,41,4,4,r)
 VIS 1
 PIN(180,55,0.000,0.000)Q~
@@ -171,7 +171,7 @@ SYM  #button
 BB(-14,1,-5,9)
 TITLE -10 5  #R
 MODEL 59
-PROP                                                                                                                                   
+PROP                                                                                                                                    
 REC(-13,2,6,6,r)
 VIS 1
 PIN(-5,5,0.000,0.000)R
@@ -189,7 +189,7 @@ SYM  #nand_gate
 BB(20,-5,60,25)
 TITLE 30 -12  #nand_gate
 MODEL 6000
-PROP                                                                                                                                   
+PROP                                                                                                                                    
 REC(25,0,30,20,r)
 VIS 5
 PIN(20,5,0.000,0.000)in2
@@ -202,21 +202,21 @@ LIG(25,0,25,20)
 LIG(25,0,55,0)
 LIG(55,0,55,20)
 LIG(55,20,25,20)
-VLG  module nand_gate( in2,in1,out1);
-VLG   input in2,in1;
-VLG   output out1;
-VLG   wire w3,;
-VLG   nmos #(10) nmos_1(w3,vss,in2); // 1.0u 0.12u
-VLG   pmos #(24) pmos_2(out1,vdd,in1); // 2.0u 0.12u
-VLG   pmos #(24) pmos_3(out1,vdd,in2); // 2.0u 0.12u
-VLG   nmos #(24) nmos_4(out1,w3,in1); // 1.0u 0.12u
-VLG  endmodule
+VLG    module nand_gate( in2,in1,out1);
+VLG     input in2,in1;
+VLG     output out1;
+VLG     wire w3,;
+VLG     nmos #(10) nmos_1(w3,vss,in2); // 1.0u 0.12u
+VLG     pmos #(24) pmos_2(out1,vdd,in1); // 2.0u 0.12u
+VLG     pmos #(24) pmos_3(out1,vdd,in2); // 2.0u 0.12u
+VLG     nmos #(24) nmos_4(out1,w3,in1); // 1.0u 0.12u
+VLG    endmodule
 FSYM
 SYM  #nand_gate
 BB(20,-50,60,-20)
 TITLE 50 -13  #nand_gate
 MODEL 6000
-PROP                                                                                                                                   
+PROP                                                                                                                                    
 REC(25,-45,30,20,r)
 VIS 5
 PIN(60,-30,0.000,0.000)in2
@@ -229,21 +229,21 @@ LIG(55,-25,55,-45)
 LIG(55,-25,25,-25)
 LIG(25,-25,25,-45)
 LIG(25,-45,55,-45)
-VLG module nand_gate( in2,in1,out1);
-VLG  input in2,in1;
-VLG  output out1;
-VLG  wire w3,;
-VLG  nmos #(10) nmos_1(w3,vss,in2); // 1.0u 0.12u
-VLG  pmos #(24) pmos_2(out1,vdd,in1); // 2.0u 0.12u
-VLG  pmos #(24) pmos_3(out1,vdd,in2); // 2.0u 0.12u
-VLG  nmos #(24) nmos_4(out1,w3,in1); // 1.0u 0.12u
-VLG endmodule
+VLG   module nand_gate( in2,in1,out1);
+VLG    input in2,in1;
+VLG    output out1;
+VLG    wire w3,;
+VLG    nmos #(10) nmos_1(w3,vss,in2); // 1.0u 0.12u
+VLG    pmos #(24) pmos_2(out1,vdd,in1); // 2.0u 0.12u
+VLG    pmos #(24) pmos_3(out1,vdd,in2); // 2.0u 0.12u
+VLG    nmos #(24) nmos_4(out1,w3,in1); // 1.0u 0.12u
+VLG   endmodule
 FSYM
 SYM  #nand_gate
 BB(20,85,60,115)
 TITLE 50 122  #nand_gate
 MODEL 6000
-PROP                                                                                                                                   
+PROP                                                                                                                                    
 REC(25,90,30,20,r)
 VIS 5
 PIN(60,105,0.000,0.000)in2
@@ -256,15 +256,15 @@ LIG(55,110,55,90)
 LIG(55,110,25,110)
 LIG(25,110,25,90)
 LIG(25,90,55,90)
-VLG module nand_gate( in2,in1,out1);
-VLG  input in2,in1;
-VLG  output out1;
-VLG  wire w3,;
-VLG  nmos #(10) nmos_1(w3,vss,in2); // 1.0u 0.12u
-VLG  pmos #(24) pmos_2(out1,vdd,in1); // 2.0u 0.12u
-VLG  pmos #(24) pmos_3(out1,vdd,in2); // 2.0u 0.12u
-VLG  nmos #(24) nmos_4(out1,w3,in1); // 1.0u 0.12u
-VLG endmodule
+VLG   module nand_gate( in2,in1,out1);
+VLG    input in2,in1;
+VLG    output out1;
+VLG    wire w3,;
+VLG    nmos #(10) nmos_1(w3,vss,in2); // 1.0u 0.12u
+VLG    pmos #(24) pmos_2(out1,vdd,in1); // 2.0u 0.12u
+VLG    pmos #(24) pmos_3(out1,vdd,in2); // 2.0u 0.12u
+VLG    nmos #(24) nmos_4(out1,w3,in1); // 1.0u 0.12u
+VLG   endmodule
 FSYM
 CNC(160 55)
 CNC(155 5)
@@ -314,4 +314,5 @@ LIG(165,-30,165,55)
 LIG(165,55,180,55)
 LIG(170,5,170,95)
 LIG(170,5,180,5)
+LIG(145,-20,150,-20)
 FFIG D:\19211a0417\flipflop_jk\dsch\flipflop_jk.sch

@@ -1,6 +1,6 @@
 // DSCH3
-// 17-Mar-22 11:11:53 AM
-// D:\19211a0417\2_4_decoder\dsch\2_4_decoder.sch
+// 26-Apr-22 1:56:14 PM
+// D:\19211a0417\decoder_2_4\dsch\2_4_decoder.sch
 
 module 2_4_decoder( A0,A1,D0,D1,D2,D3);
  input A0,A1;
