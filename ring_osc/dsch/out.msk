@@ -1,0 +1,24 @@
+// DSCH3
+// 08-Jun-22 11:06:53 AM
+// D:\19211a0417\ring_osc\dsch\sipo.sch
+
+module sipo( in3,in2,clk2,out6,out3,out4,out5);
+ input in3,in2,clk2;
+ output out6,out3,out4,out5;
+ wire w6,w7,w9,w10,w12,w13,w15;
+ dreg #(12) dreg_1(out3,w6,in2,in3,clk2);
+ dreg #(12) dreg_2(out4,w9,w7,in3,clk2);
+ dreg #(12) dreg_3(out5,w12,w10,in3,clk2);
+ dreg #(12) dreg_4(out6,w15,w13,in3,clk2);
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#1000 in3=~in3;
+#2000 in2=~in2;
+#2000 clk2=~clk2;
+
+// Simulation parameters
+// in3 CLK 10 10
+// in2 CLK 20 20
+// clk2 CLK 20.00 20.00

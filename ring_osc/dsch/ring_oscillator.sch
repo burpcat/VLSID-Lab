@@ -1,11 +1,11 @@
 DSCH3
-VERSION 02-Jun-22 10:45:53 AM
+VERSION 07-Jun-22 3:41:57 PM
 BB(-15,-30,149,55)
 SYM  #pmos
 BB(80,-15,100,5)
 TITLE 95 -10  #pmos
 MODEL 902
-PROP   2.0u 0.12u MP                                                                                                                              
+PROP   2.0u 0.12u MP                                                                                                                               
 REC(81,-10,19,15,r)
 VIS 2
 PIN(100,-15,0.000,0.000)s
@@ -19,13 +19,13 @@ LIG(100,-11,92,-11)
 LIG(100,-15,100,-11)
 LIG(100,1,92,1)
 LIG(100,5,100,1)
-VLG  pmos pmos(drain,source,gate);
+VLG    pmos pmos(drain,source,gate);
 FSYM
 SYM  #pmos
 BB(0,-15,20,5)
 TITLE 15 -10  #pmos
 MODEL 902
-PROP   2.0u 0.12u MP                                                                                                                              
+PROP   2.0u 0.12u MP                                                                                                                               
 REC(1,-10,19,15,r)
 VIS 2
 PIN(20,-15,0.000,0.000)s
@@ -39,13 +39,13 @@ LIG(20,-11,12,-11)
 LIG(20,-15,20,-11)
 LIG(20,1,12,1)
 LIG(20,5,20,1)
-VLG  pmos pmos(drain,source,gate);
+VLG    pmos pmos(drain,source,gate);
 FSYM
 SYM  #nmos
 BB(80,20,100,40)
 TITLE 95 25  #nmos
 MODEL 901
-PROP   1.0u 0.12u MN                                                                                                                              
+PROP   1.0u 0.12u MN                                                                                                                               
 REC(81,25,19,15,r)
 VIS 2
 PIN(100,40,0.000,0.000)s
@@ -58,7 +58,7 @@ LIG(100,24,92,24)
 LIG(100,20,100,24)
 LIG(100,36,92,36)
 LIG(100,40,100,36)
-VLG  nmos nmos(drain,source,gate);
+VLG    nmos nmos(drain,source,gate);
 FSYM
 SYM  #vss
 BB(60,47,70,55)
@@ -79,7 +79,7 @@ SYM  #pmos
 BB(35,-15,55,5)
 TITLE 50 -10  #pmos
 MODEL 902
-PROP   2.0u 0.12u MP                                                                                                                              
+PROP   2.0u 0.12u MP                                                                                                                               
 REC(36,-10,19,15,r)
 VIS 2
 PIN(55,-15,0.000,0.000)s
@@ -93,13 +93,13 @@ LIG(55,-11,47,-11)
 LIG(55,-15,55,-11)
 LIG(55,1,47,1)
 LIG(55,5,55,1)
-VLG  pmos pmos(drain,source,gate);
+VLG    pmos pmos(drain,source,gate);
 FSYM
 SYM  #nmos
 BB(35,20,55,40)
 TITLE 50 25  #nmos
 MODEL 901
-PROP   1.0u 0.12u MN                                                                                                                              
+PROP   1.0u 0.12u MN                                                                                                                               
 REC(36,25,19,15,r)
 VIS 2
 PIN(55,40,0.000,0.000)s
@@ -112,13 +112,13 @@ LIG(55,24,47,24)
 LIG(55,20,55,24)
 LIG(55,36,47,36)
 LIG(55,40,55,36)
-VLG  nmos nmos(drain,source,gate);
+VLG    nmos nmos(drain,source,gate);
 FSYM
 SYM  #nmos
 BB(0,20,20,40)
 TITLE 15 25  #nmos
 MODEL 901
-PROP   1.0u 0.12u MN                                                                                                                              
+PROP   1.0u 0.12u MN                                                                                                                               
 REC(1,25,19,15,r)
 VIS 2
 PIN(20,40,0.000,0.000)s
@@ -131,13 +131,13 @@ LIG(20,24,12,24)
 LIG(20,20,20,24)
 LIG(20,36,12,36)
 LIG(20,40,20,36)
-VLG  nmos nmos(drain,source,gate);
+VLG    nmos nmos(drain,source,gate);
 FSYM
 SYM  #light
 BB(143,-10,149,4)
 TITLE 145 4  #light1
 MODEL 49
-PROP                                                                                                                                   
+PROP                                                                                                                                    
 REC(144,-9,4,4,r)
 VIS 1
 PIN(145,5,0.000,0.000)out1
@@ -160,7 +160,7 @@ SYM  #vdd
 BB(75,-30,85,-20)
 TITLE 78 -24  #vdd
 MODEL 1
-PROP                                                                                                                                   
+PROP                                                                                                                                    
 REC(0,0,0,0, )
 VIS 0
 PIN(80,-20,0.000,0.000)vdd
